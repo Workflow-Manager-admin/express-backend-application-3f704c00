@@ -2,6 +2,13 @@ let data = {};
 let counter = 1;
 
 // PUBLIC_INTERFACE
+exports.reset = () => {
+  /** Resets the in-memory resource store and counter (for use in tests). */
+  data = {};
+  counter = 1;
+};
+
+// PUBLIC_INTERFACE
 exports.list = () => {
   /** Returns all resource objects in-memory. */
   return Object.values(data);
