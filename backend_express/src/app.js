@@ -1,3 +1,5 @@
+require('dotenv').config(); // Load .env as early as possible
+
 const cors = require('cors');
 const express = require('express');
 const routes = require('./routes');
